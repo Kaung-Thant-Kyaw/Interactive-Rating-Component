@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Color */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral Color */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: linear-gradient(
+    to bottom,
+    hsl(212, 22%, 15%),
+    hsl(210, 10%, 13%)
+  );
+  color: var(--white);
+  padding: 32px;
+  width: 375px;
+  border-radius: 12px;
+}
+
+.card .invisible {
+  display: none;
+}
+
+.icon-star {
+  background-color: hsl(212, 22%, 11%);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.icon-star img {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  justify-self: center;
+}
+
+.question {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.request {
+  font-size: 15px;
+  color: var(--light-grey);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.evaluation-levels {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.transition {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 16px 32px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 32px;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-bottom: 24px;
+}
+
+.final-message {
+  margin-bottom: 24px;
+}
+
+.thanks .thanks-heading {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.thanks-text {
+  text-align: center;
+  color: var(--medium-grey);
+  font-weight: 700;
+  line-height: 1.6;
+}

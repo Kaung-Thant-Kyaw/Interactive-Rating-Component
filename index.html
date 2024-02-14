@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div id="evaluation" class="evaluation">
+        <figure class="icon-star">
+          <img src="./images/icon-star.svg" alt="Star" />
+        </figure>
+        <h2 class="question">How did we do?</h2>
+        <p class="request">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <ul id="evaluation-levels" class="evaluation-levels">
+          <li id="li" class="transition">1</li>
+          <li id="li" class="transition">2</li>
+          <li id="li" class="transition">3</li>
+          <li id="li" class="transition">4</li>
+          <li id="li" class="transition">5</li>
+        </ul>
+
+        <button id="submit-btn" class="submit-btn">Submit</button>
+      </div>
+
+      <div id="thanks" class="thanks invisible">
+        <img src="./images/illustration-thank-you.svg" alt="Thank You" />
+        <p id="final-message" class="final-message"></p>
+        <h2 class="thanks-heading">Thank you!</h2>
+        <p class="thanks-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
